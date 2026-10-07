@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>javaScript function Type</title>
+</head>
+<body>
+    <h2>click a button to run a function</h2>
+    <button onclick="functionDeclaration()">function functionDeclaration</button>
+    <button onclick="functionDefinition()">functionDeclaration</button>
+    <button onclick="arrowFunction()">arrowFunction</button>
+
+    <div id="output" style="margin-top:20px;color:green;font-weight: bold;"></div>
+    <script>
+        function functionDeclaration(){
+            document.getElementById("output").textContent="This is a function Declaration.";
+        }
+        var functionDefinition=function(){
+            document.getElementByid("output").textContent="This is a function definition.";
+          };
+            const arrowFunction=()=>{
+                document.getElementById("output").textContent="this is an Arrow Function.";
+            };
+    </script>
+</body>
